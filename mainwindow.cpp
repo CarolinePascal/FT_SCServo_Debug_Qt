@@ -72,7 +72,7 @@ void MainWindow::setupComSettings()
     connect(ui->ComOpenButton, &QPushButton::clicked, this, &MainWindow::onConnectButtonClicked);
     port_search_timer_ = new QTimer(this);
     connect(port_search_timer_, &QTimer::timeout, this, &MainWindow::onPortSearchTimerTimeout);
-    port_search_timer_->start(500);
+    port_search_timer_->start(5000);
 }
 
 void MainWindow::setupServoLists()
